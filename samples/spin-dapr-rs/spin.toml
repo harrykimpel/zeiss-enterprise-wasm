@@ -15,12 +15,12 @@ route = "/..."
 component = "spin-dapr-rs"
 
 [component.spin-dapr-rs]
-source = "target/wasm32-wasi/release/spin_dapr_rs.wasm"
+source = "target/wasm32-wasip1/release/spin_dapr_rs.wasm"
 allowed_outbound_hosts = [ "https://*:*", "http://*:*"]
 
 [component.spin-dapr-rs.variables]
 dapr_url = "{{dapr_url}}"
 
 [component.spin-dapr-rs.build]
-command = "cargo build --target wasm32-wasi --release"
+command = "cargo build --target wasm32-wasip1 --release"
 watch = ["src/**/*.rs", "Cargo.toml"]
