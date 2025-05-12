@@ -38,7 +38,7 @@ variable "cluster_admins" {
 
 variable "cluster_version" {
   type        = string
-  default     = "1.27.7"
+  default     = "1.31"
   description = "Kubernetes version to install."
 }
 
